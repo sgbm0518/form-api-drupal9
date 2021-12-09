@@ -1,0 +1,5 @@
+name: 'First module'
+type: module
+description: 'This is my first module in drupal 9'
+core_version_requirement: ^8 || ^9
+package: 'Custom'

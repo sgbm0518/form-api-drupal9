@@ -1,0 +1,15 @@
+first_module.content:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\first_module\Controller\HelloController::content'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+first_module.form:
+  path: '/simple-custom-form'
+  defaults:
+    _form: '\Drupal\first_module\Form\ContactForm'
+  requirements:
+    _access: 'TRUE'
+
