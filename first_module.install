@@ -1,0 +1,35 @@
+<?php
+// .install -> se dice que se va a crear una tabla en la base de datos con campos especificos,
+// cuando se desinstala el modulo, de inmediato se desinstalara la tabla.
+function first_module_schema() {
+    $schema['first_module'] = array(
+      'fields' => array(
+        'id'=>array(
+          'type'=>'serial', // serial -> auto numerico, cada vez que se cree un registro se va aumentar de uno en uno
+          'not null' => TRUE,
+        ),
+        'nombre'=>array(
+          'type' => 'varchar',
+          'length' => 40,
+          'not null' => TRUE,
+        ),
+        'apellido'=>array(
+          'type' => 'varchar',
+          'length' => 40,
+          'not null' => TRUE,
+        ),
+        'telefono'=>array(
+          'type' => 'varchar',
+          'length' => 40,
+          'not null' => TRUE,
+          ),
+        'email'=>array(
+          'type' => 'varchar',
+          'length' => 25,
+          'not null' => TRUE,
+        ),
+      ),
+      'primary key' => array('id'),
+    );
+    return $schema;
+  }

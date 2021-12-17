@@ -13,7 +13,7 @@ class HelloController extends ControllerBase {
   public function content() {
 	return array(
     	'#type' => 'markup',
-    	'#markup' => $this->t(''),
+    	'#markup' => $this->t('Datos'),
 	);
   }
 }

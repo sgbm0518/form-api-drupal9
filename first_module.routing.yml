@@ -12,4 +12,3 @@ first_module.form:
     _form: '\Drupal\first_module\Form\ContactForm'
   requirements:
     _access: 'TRUE'
-
